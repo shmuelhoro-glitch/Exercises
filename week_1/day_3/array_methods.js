@@ -65,3 +65,48 @@
 // const arr = [[1,2,3],[4,5,6],[7,8,9]]
 // const flatArray = arr.flat()
 // console.log(flatArray);
+
+
+//36
+// const numbers = [1,2,8,7,3,6];
+// const chain = numbers.filter((num) => num%2 == 0).map((num) => num*2).reduce((acc,num)=> acc+num)
+// console.log(chain);
+
+
+//38
+// const items = [{ type: "fruit" }, { type: "veg" }, { type: "fruit" }]
+// const groupBy = items.reduce((acc,currentVal) =>{
+//     if (!acc[currentVal.type]){
+//         acc[currentVal.type] = [];
+//     }
+//     acc[currentVal.type].push(currentVal)
+//     return acc
+
+// },{})
+
+// console.log(groupBy);
+
+//39
+// const numbers = [2,5,2,4,6,8,1,2,2,4,6,7];
+// const withOut = numbers.reduce((acc,currentVal) =>{
+//     if (!acc.includes(currentVal)){
+//         acc.push(currentVal)
+//     }
+//     return acc
+// },[])
+// console.log(withOut);
+
+
+//41
+// const products = [
+
+//   { name: "Laptop", price: 800, inStock: true,  category: "tech"    },
+
+//   { name: "Phone",  price: 400, inStock: false, category: "tech"    },
+
+//   { name: "Shirt",  price: 50,  inStock: true,  category: "fashion" }
+
+// ];
+// const chaining = products.filter((item) => item.inStock && item.price> 100).sort((a,b) => a.price - b.price).flatMap((item) => item.name).toString()
+// console.log(chaining);
+

@@ -35,3 +35,21 @@
 // const multiply = arr.reduce((acc,val) => acc*val)
 // console.log(multiply);
 
+
+//12
+// const users = [
+//    { name: "Yossi", age: 25 },
+//    { name: "Avi", age: 30 },
+//    { name: "Dan", age: 20 }
+// ]
+// const sumAges = users.reduce((acc, curr) => {
+//     return acc+ curr.age;
+// },0)
+// const averageAge = sumAges/users.length;
+// console.log(averageAge);
+
+
+//25
+// const numbers = [1,5,2,7,3,4,6];
+// const sortNumbers = numbers.sort().reverse()
+// console.log(sortNumbers);

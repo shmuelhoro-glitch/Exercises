@@ -53,3 +53,15 @@
 // const numbers = [1,5,2,7,3,4,6];
 // const sortNumbers = numbers.sort().reverse()
 // console.log(sortNumbers);
+
+
+//29
+// const numbers = [1,2,3,4,5,6,7];
+// numbers.splice(1,2)
+// console.log(numbers);
+
+
+//32
+// const arr = [[1,2,3],[4,5,6],[7,8,9]]
+// const flatArray = arr.flat()
+// console.log(flatArray);

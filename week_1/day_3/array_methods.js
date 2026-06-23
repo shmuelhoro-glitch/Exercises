@@ -1,0 +1,71 @@
+//1
+// const arr = [5,4,3,2,1];
+// const multi = arr.map((num) => num*2 )
+// console.log(multi);
+
+
+//2
+// const str = ["hello","world"];
+// const upperStr = str.map((char) => char.toUpperCase())
+// console.log(upperStr);
+
+//3
+// const prices = [20,45,85,16,27]
+// const priceWithTax = prices.map((price) => Number((price*1.17).toFixed(2)))
+// console.log(priceWithTax);
+
+
+
+//4
+// const nums = [6,5,4,3,2,1]
+// const filterEven = nums.filter((num) => num%2 == 0)
+// console.log(filterEven);
+
+
+
+//8 
+const prices = [20,105,85,16,27,450,210]
+const filterAndMap = prices.map((price) => Number((price * 1.10).toFixed(2))).filter((price) => price > 100)
+console.log(filterAndMap);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

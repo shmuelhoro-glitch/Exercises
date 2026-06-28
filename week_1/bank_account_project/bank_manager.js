@@ -54,8 +54,8 @@ export function Deposit(customerId,amount) {
             customer.balance += Number(amount)
             return "Deposit completed successfully"
         }
-        return "customer not found"
     }
+    return "customer not found"
 }
 
 export function Withdraw(customerId,amount){
@@ -65,11 +65,10 @@ export function Withdraw(customerId,amount){
             if (!customer.isActive){return "customer inactive"}
             if (customer.balance < Number(amount)){return "Withdraw failed: insufficient balance"}
             customer.balance -= Number(amount)
-            return "Withdraw completed successfully".to
+            return "Withdraw completed successfully"
         }
-        return "customer not found"
     }
-
+    return "customer not found"
 }
 
 
@@ -80,7 +79,7 @@ export function SearchCustomer(q){
             else{ return "id not found"}
         }
     else{
-        const result = CUSTOMERS.find(customer => customer.fullName.toLowerCase == q.toLowerCase)
+        const result = CUSTOMERS.find(customer => customer.fullName.toLowerCase == q.toLowerCase())
             if (result) {return result}
             else {return "customer not found"}
         }

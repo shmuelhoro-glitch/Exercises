@@ -49,7 +49,7 @@ export function showCustomers() {return CUSTOMERS.map((customer) => {
 export function Deposit(customerId,amount) {
     if (Number(amount) < 0){return "negative amount!"}
     for (let customer of CUSTOMERS){
-        if (customer.id == customerId){
+        if (customer.id == Number(customerId)){
             if (!customer.isActive){return "customer inactive"}
             customer.balance += Number(amount)
             return "Deposit completed successfully"

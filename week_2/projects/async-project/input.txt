@@ -1,0 +1,3 @@
+Hello word 
+this is my input file 
+Node.js cool

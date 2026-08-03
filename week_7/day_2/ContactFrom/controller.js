@@ -67,22 +67,24 @@ export async function deleteById(req, res){
 
 
 
-// app.get('/admin', async (req, res) => {
-//   const contacts = await Contact.find().sort({ createdAt: -1 });
-//   // בנה HTML עם טבלה
-//   const rows = contacts.map(c => `
-//     <tr>
-//       <td>${c.name}</td>
-//       <td>${c.email}</td>
-//       <td>${c.subject}</td>
-//       <td>${c.message}</td>
-//       <td><button onclick="del('${c._id}')">מחק</button></td>
-//     </tr>
-//   `).join('');
-//   res.send(`<table>...</table><script>
-//     function del(id) {
-//       fetch('/contact/'+id, { method: 'DELETE' })
-//         .then(() => location.reload());
-//     }
-//   </script>`);
-// });
+export async function  adminPage(req, res){
+    const contacts = await readFile()
+    const sortedContacts = contacts.sort(con => {createdAt: -1})
+    const rows = sortedContacts.map(c => `
+        <tbody>
+        <tr>
+            <td>${c.name}</td>
+            <td>${c.email}</td>
+            <td>${c.subject}</td>
+            <td>${c.message}</td>
+            <td><button onClick="del(${c._id})">מחק</button></td>
+        </tr>
+        </tbody>
+    `).join('')
+    res.send(`<table border="10" >${rows}</table><script>
+        function del(id){
+        fetch('/contact/'+ id, {method: "DELETE"})
+            .then(() => location.reload())
+        }
+    </script>`)
+}

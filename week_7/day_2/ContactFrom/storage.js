@@ -1,12 +1,10 @@
 import fs from "fs/promises"
 
-
 export async function readFile(){
     const data = await fs.readFile('./db.json','utf8')
     const answer = JSON.parse(data)
     return answer
 }
-
 
 
 export async function saveFile(data){
@@ -28,4 +26,3 @@ export async function deleteContact(id){
     return result
 }
 
-// console.log(await deleteContact(5));

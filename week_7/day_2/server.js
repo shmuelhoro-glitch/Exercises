@@ -6,8 +6,6 @@ const app = express();
 app.use(express.urlencoded({extended:true}));
 
 
-
-
 app.get("/register", (req, res) =>{
     res.sendFile('register.html', {root: './'})
 })

@@ -3,11 +3,10 @@ import fs from "fs/promises"
 
 export async function readFile(){
     const data = await fs.readFile('./db.json','utf8')
-    const answer = await JSON.parse(data)
+    const answer = JSON.parse(data)
     return answer
 }
 
-// console.log(await readFile());
 
 
 export async function saveFile(data){
@@ -20,3 +19,13 @@ export async function saveFile(data){
     }
 }
 
+export async function deleteContact(id){
+    const data = await readFile()
+    const conForDel = data.findIndex(con => con._id === Number(id))
+    if (conForDel === -1) {throw new Error("not found")}
+    data.splice(conForDel, 1)
+    const result = await saveFile(data)
+    return result
+}
+
+// console.log(await deleteContact(5));

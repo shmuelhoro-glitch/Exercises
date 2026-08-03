@@ -1,6 +1,15 @@
 import { readFile, saveFile } from "./storage.js"
 
 
+
+export function getIndexHtml(req, res){
+    res.sendFile("index.html", {root: "./"})
+}
+
+
+
+
+
 export async function createNew(req, res){
     const {name, email, subject, message} = req.body
     if (!name || !email || !subject || !message){
@@ -13,3 +22,5 @@ export async function createNew(req, res){
     if (result === true)
     return res.status(201).send("success message")
 }
+
+

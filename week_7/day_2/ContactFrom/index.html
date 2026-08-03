@@ -1,11 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <form action="/contact" method="post">
+
+    <label for="name">שם</label>
+    <input
+      type="text"
+      name="name"
+      id="name"
+      placeholder="שם"
+      required
+      minlength="2"
+    />
+    <br />
+    <br />
+
+    <label for="email">אימייל</label>
+    <input type="email" name="email" id="email" placeholder="אימייל" required />
+
+    <br />
+    <br />
+
+    <label for="subject">נושא</label>
+    <select name="subject" id="subject" required>
+      <br />
+      <br />
+      <option value="" disabled selected>בחר את נושא הפניה</option>
+      <option value="bug">באג</option>
+      <option value="feature">פיצ'ר</option>
+      <option value="question">שאלה</option>
+      <option value="other">אחר</option>
+    </select>
+
+    <br />
+    <br />
+
+    <label for="message">הודעה</label>
+    <textarea name="message" id="message" placeholder="הודעה" required minlength="5"></textarea>
+
+    <br>
+    <br>
+
+    <button type="submit">שלח</button>
+    </form>
+  </body>
 </html>

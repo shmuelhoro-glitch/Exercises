@@ -1,0 +1,35 @@
+body {
+    background: rgba(94, 39, 94, 0.274);
+}
+
+article h1{
+    margin: 50px;
+    color: rgb(10, 136, 238);
+}
+
+article h2{
+    margin: 50px;
+    color: blue;
+}
+
+article blockquote{
+    border-right: 3px solid;
+    font-style: italic;
+    padding-right: 16px;
+    color: rgb(47, 0, 255);
+}
+
+nav ul > li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#author-box {
+    background: #f4f4f4;
+    color: red;
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 40px;
+
+}

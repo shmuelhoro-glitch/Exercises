@@ -1,0 +1,33 @@
+:root {
+    --primary: green;
+    --general-font: 100 ;
+    --space: 10px;
+}
+
+* {
+    background-color: var(--primary);
+}
+
+h2 {
+    background-color: var(--primary);
+    font-weight: var(--general-font);
+    word-spacing: var(--space);
+}
+
+p {
+    background-color: antiquewhite;
+    font-weight: var(--general-font);
+    word-spacing: var(--space);
+}
+
+.reset {
+    background-color: var(--primary);
+    font-weight: var(--general-font);
+    word-spacing: var(--space);
+}
+
+.submit {
+    background-color: var(--fakeColor, var(--anotherFake, red)) ;
+}
+
+

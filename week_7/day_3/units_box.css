@@ -1,0 +1,29 @@
+/* .outside {
+    width: 600px;
+    background-color: gray;
+} */
+
+/* .outside .inside {
+    width: 50%;
+    height: 50px;
+    background-color: blue;
+} */
+
+/* #para1 {
+    font-size: 16px;
+    background-color: red;
+}
+
+#para2 {
+    font-size: 1rem;
+    background-color: green;
+} */
+
+.exercise {
+    background-color: cadetblue;
+    width: 200px;
+    padding: 20px;
+    border: 5px;
+    margin: 30px;
+    color: blue;
+}
